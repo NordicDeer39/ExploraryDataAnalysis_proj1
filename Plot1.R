@@ -1,5 +1,5 @@
-
 # reading data file
+
 sourcefile <- "household_power_consumption.txt"
 data <- read.table(sourcefile, header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
 
