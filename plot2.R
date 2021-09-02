@@ -1,11 +1,10 @@
 sourcefile <- "household_power_consumption.txt"
 data <- read.table(sourcefile, header = TRUE, sep = ";", stringsAsFactors = FALSE, dec = ".")
 
-# subsetting data for mentioned date
+# subsetting data - mentioned data:
 dateddata <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
-## plotting
-# histogram for plot2
+# histogram for plot2:
 
 datetime <- strptime(paste(dateddata$Date, dateddata$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 activepower <- as.numeric(dateddata$Global_active_power)
