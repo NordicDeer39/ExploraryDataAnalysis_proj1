@@ -6,7 +6,7 @@ data <- read.table(sourcefile, header = TRUE, sep = ";", stringsAsFactors = FALS
 dateddata <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 datetime <- strptime(paste(dateddata$Date, dateddata$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
 
-# histogram for plot 4
+# Let's draw histogram:
 
 activepower <- as.numeric(dateddata$Global_active_power)
 reactivepower <- as.numeric(dateddata$Global_reactive_power)
