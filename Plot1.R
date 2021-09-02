@@ -8,7 +8,7 @@ dateddata <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 
 
-# plot1 histogram:
+#Let's draw histogram:
 
 activepower <- as.numeric(dateddata$Global_active_power)
 png("plot1.png")
